@@ -74,8 +74,8 @@ export default function HomePage() {
 
      
 
-      <section className="py-8 bg-gray-50 px-4 mx-16 mb-8 rounded-2xl">
-  <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <section className="py-8  px-4 mb-8  flex items-center justify-center ">
+  <div className="relative max-w-7xl w-full mx-auto grid md:grid-cols-3 gap-8 bg-gray-400 p-8 rounded-2xl">
 
     {/* Card 1 */}
     <div className="group bg-white rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20 cursor-pointer">
