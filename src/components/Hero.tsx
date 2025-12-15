@@ -19,7 +19,7 @@ export default function Hero() {
           <h1
             className="
               text-3xl sm:text-4xl md:text-4xl lg:text-5xl
-              font-bold leading-tight mb-6
+              font-bold leading-tight mb-6 text-black
             "
           >
             Vimarsha Invotech:

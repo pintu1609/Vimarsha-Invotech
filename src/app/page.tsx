@@ -18,7 +18,7 @@ export default function HomePage() {
         >
           {/* Card 1 */}
           <div className="group bg-white rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20 cursor-pointer">
-            <h3 className="text-lg sm:text-xl font-semibold mb-3 transition-colors group-hover:text-blue-600">
+            <h3 className="text-lg sm:text-xl font-semibold mb-3 transition-colors group-hover:text-blue-600 text-black">
               Deep Analysis
             </h3>
             <p className="text-gray-600 text-sm sm:text-base transition-colors group-hover:text-gray-700">
@@ -29,7 +29,7 @@ export default function HomePage() {
 
           {/* Card 2 */}
           <div className="group bg-white rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20 cursor-pointer">
-            <h3 className="text-lg sm:text-xl font-semibold mb-3 transition-colors group-hover:text-blue-600">
+            <h3 className="text-lg sm:text-xl font-semibold mb-3 transition-colors group-hover:text-blue-600 text-black">
               Scalable Engineering
             </h3>
             <p className="text-gray-600 text-sm sm:text-base transition-colors group-hover:text-gray-700">
@@ -40,7 +40,7 @@ export default function HomePage() {
 
           {/* Card 3 */}
           <div className="group bg-white rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20 cursor-pointer">
-            <h3 className="text-lg sm:text-xl font-semibold mb-3 transition-colors group-hover:text-blue-600">
+            <h3 className="text-lg sm:text-xl font-semibold mb-3 transition-colors group-hover:text-blue-600 text-black">
               Applied AI
             </h3>
             <p className="text-gray-600 text-sm sm:text-base transition-colors group-hover:text-gray-700">

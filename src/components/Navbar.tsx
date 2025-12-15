@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <header className="absolute top-0 left-0 w-full z-50">
 <nav
-  className={`max-w-7xl mx-auto px-6 py-5 flex items-center justify-between text-sm
+  className={`max-w-7xl h-[64px] mx-auto px-6 py-5 flex items-center justify-between text-sm
   ${open ? "bg-black/90" : "bg-transparent"} md:bg-transparent`}
 >
         
