@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -15,9 +16,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-slate-100">
-            V <span className="text-blue-400">I</span>
-          </span>
+        <Image src="/image/logo2.png" alt="Vimarsha Invotech Logo" width={70} height={70} />
         </Link>
 
         {/* Desktop Menu */}

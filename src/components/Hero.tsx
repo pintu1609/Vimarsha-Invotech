@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6">
+<section className="min-h-[calc(100vh-100px)] sm:min-h-screen flex items-center justify-center px-3 sm:px-6 mt-[80px] sm:mt-0">
       <div
         className="
           relative max-w-7xl w-full
@@ -66,6 +66,20 @@ export default function Hero() {
               h-auto
             "
           />
+          {/* <Image
+  src="/image/homes.png"
+  alt="AI Illustration"
+  width={420}
+  height={420}
+  priority
+  className="
+    w-[200px]
+    sm:w-[280px]
+    md:w-[360px]
+    lg:w-[420px]
+    h-auto
+  "
+/> */}
         </div>
       </div>
     </section>
