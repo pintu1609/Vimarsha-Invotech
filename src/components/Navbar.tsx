@@ -1,86 +1,79 @@
-// import Link from "next/link";
+"use client";
 
-// export default function Navbar() {
-//   return (
-//     <header className="w-full border-b bg-white">
-//       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-//         {/* Logo / Brand */}
-//         <Link href="/" className="text-xl font-bold">
-//           Vimarsha Invotech
-//         </Link>
-
-//         {/* Navigation Links */}
-//         <div className="hidden md:flex space-x-8 text-sm font-medium">
-//           <Link href="/about" className="hover:text-gray-600">
-//             About
-//           </Link>
-//           <Link href="/services" className="hover:text-gray-600">
-//             Services
-//           </Link>
-//           <Link href="/vision" className="hover:text-gray-600">
-//             Vision
-//           </Link>
-//           <Link href="/contact" className="hover:text-gray-600">
-//             Contact
-//           </Link>
-//         </div>
-
-//         {/* CTA Button */}
-//         <Link
-//           href="/contact"
-//           className="hidden md:inline-block px-5 py-2 text-sm bg-black text-white rounded-md hover:bg-gray-800 transition"
-//         >
-//           Get in Touch
-//         </Link>
-//       </nav>
-//     </header>
-//   );
-// }
-
-
-import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="absolute top-0 left-0 w-full z-50">
-      <nav className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between text-sm">
-        <div className="text-xl font-bold text-blue-500">
-       {/* <Link href="/" className="text-xl font-bold">
-
-          VI
-          <Image src="/public/image/logos.svg" alt="AI Illustration" width={50} height={50} />
-        </Link> */}
-       <Link href="/" className="flex items-center gap-2">
-        {/*   <Image
-  src="/image/logos.svg"
-  alt="Vimarsha Invotech Logo"
-  width={144}
-  height={144}
-  priority
-  className="object-contain"
-/> */}
-
+      <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between text-sm bg-black/90 md:bg-transparent">
+        
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2">
           <span className="text-xl font-bold text-slate-100">
             V <span className="text-blue-400">I</span>
           </span>
         </Link>
-        </div>
 
+        {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-gray-300">
-          <Link href="/about">About Us</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/vision">Vision</Link>    
-          <Link href="/contact">Contact</Link>
+          <Link href="/about" className="hover:text-white">About Us</Link>
+          <Link href="/services" className="hover:text-white">Services</Link>
+          <Link href="/vision" className="hover:text-white">Vision</Link>
+          <Link href="/contact" className="hover:text-white">Contact</Link>
         </div>
 
+        {/* Desktop CTA */}
         <Link
           href="/contact"
-          className="px-5 py-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition"
+          className="hidden md:inline-block px-5 py-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition"
         >
           Get Started
         </Link>
+
+        {/* Mobile Hamburger */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden text-white focus:outline-none"
+          aria-label="Toggle Menu"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+          >
+            {open ? (
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
       </nav>
+
+      {/* Mobile Menu */}
+      {open && (
+        <div className="md:hidden bg-black/90 backdrop-blur border-t border-white/10">
+          <div className="flex flex-col items-center gap-6 pb-6 pt-2 text-gray-300">
+            <Link href="/about" onClick={() => setOpen(false)}>About Us</Link>
+            <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
+            <Link href="/vision" onClick={() => setOpen(false)}>Vision</Link>
+            <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
+
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="mt-2 px-6 py-2 rounded-full bg-blue-500 text-white"
+            >
+              Get Started
+            </Link>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
