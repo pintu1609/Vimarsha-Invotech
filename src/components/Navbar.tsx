@@ -8,7 +8,10 @@ export default function Navbar() {
 
   return (
     <header className="absolute top-0 left-0 w-full z-50">
-      <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between text-sm bg-black/90 md:bg-transparent">
+<nav
+  className={`max-w-7xl mx-auto px-6 py-5 flex items-center justify-between text-sm
+  ${open ? "bg-black/90" : "bg-transparent"} md:bg-transparent`}
+>
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
