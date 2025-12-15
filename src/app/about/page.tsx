@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <section className="py-24 md:py-24 px-4 sm:px-6">
+    <section className="pt-24 pb-16 md:py-24 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
 
         {/* Header */}
