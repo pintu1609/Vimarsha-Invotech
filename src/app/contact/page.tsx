@@ -207,6 +207,12 @@ import { BeatLoader } from "react-spinners";
 import { toast } from "react-hot-toast";
 import { initialContact, contactValidationSchema } from "@/validation/Index";
 
+export const metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch with Vimarsha Invotech to discuss scalable digital and AI-driven solutions.",
+};
+
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
 

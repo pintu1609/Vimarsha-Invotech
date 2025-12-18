@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Vision",
+  description:
+    "Our vision is to build intelligent, scalable digital products through research-driven innovation.",
+};
+
 export default function VisionPage() {
   return (
     <section className="pt-24 pb-16 md:py-24 px-4 sm:px-6">

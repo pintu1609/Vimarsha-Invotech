@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "About Us",
+  description:
+    "Learn about Vimarsha Invotech and our research-driven approach to scalable digital engineering.",
+};
+
 export default function AboutPage() {
   return (
     <section className="pt-24 pb-16 md:py-24 px-4 sm:px-6">
