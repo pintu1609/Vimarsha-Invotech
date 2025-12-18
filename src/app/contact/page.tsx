@@ -355,7 +355,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                 <input type="text" name="emailSubject" placeholder="Email Subject"   className={`w-full px-4 py-3 rounded-xl bg-white/10 border text-slate-100 placeholder-slate-400 focus:outline-none ${
+                 <input type="text" name="emailSubject" placeholder="Inquiry Type"   className={`w-full px-4 py-3 rounded-xl bg-white/10 border text-slate-100 placeholder-slate-400 focus:outline-none ${
                     errors.emailSubject && touched.emailSubject
                       ? "border-red-500"
                       : "border-white/10"
