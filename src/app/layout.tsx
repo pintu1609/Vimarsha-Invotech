@@ -38,11 +38,45 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+// export const metadata = {
+//   title: "Vimarsha Invotech | Deep Insight Meets Digital Innovation",
+//   description:
+//     "Vimarsha Invotech builds scalable full-stack and AI-driven solutions for MSMEs and startups.",
+// };
+
+// export const metadata = {
+//   title: "AI Software Company in India | Vimarsha Invotech",
+//   description:
+//     "Vimarsha Invotech is an AI software company in India delivering scalable full-stack, cloud, and AI solutions for startups and MSMEs.",
+//   keywords: [
+//     "AI software company India",
+//     "AI development company",
+//     "Full stack development company India",
+//     "AI solutions for startups",
+//     "AI solutions for MSMEs",
+//   ],
+//   metadataBase: new URL("https://vimarsha-invotech.vercel.app"),
+// };
+
 export const metadata = {
-  title: "Vimarsha Invotech | Deep Insight Meets Digital Innovation",
+  title: {
+    default: "Vimarsha Invotech | Deep Insight Meets Digital Innovation",
+    template: "%s | Vimarsha Invotech",
+  },
   description:
     "Vimarsha Invotech builds scalable full-stack and AI-driven solutions for MSMEs and startups.",
+  metadataBase: new URL("https://vimarsha-invotech.vercel.app"),
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Vimarsha Invotech",
+    url: "https://vimarsha-invotech.vercel.app",
+  },
 };
+
 
 export default function RootLayout({
   children,
@@ -52,6 +86,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-white text-gray-900">
+          <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Vimarsha Invotech",
+              url: "https://vimarsha-invotech.vercel.app",
+              description:
+                "AI and full-stack software company providing scalable digital solutions.",
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "IN",
+              },
+            }),
+          }}
+        />
+
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />

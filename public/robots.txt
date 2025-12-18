@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vimarsha-invotech.vercel.app/sitemap.xml

@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Services",
+  description:
+    "Full-stack development, cloud architecture, and applied AI services designed for scalable growth.",
+};
+
 export default function ServicesPage() {
   return (
     <section className="pt-24 pb-16 md:py-24 px-4 sm:px-6">
