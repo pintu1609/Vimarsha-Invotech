@@ -37,6 +37,7 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/whattapp/WhatsAppButton";
 
 // export const metadata = {
 //   title: "Vimarsha Invotech | Deep Insight Meets Digital Innovation",
@@ -108,7 +109,9 @@ export default function RootLayout({
         />
 
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen">{children}
+          <WhatsAppButton />
+        </main>
         <Footer />
       </body>
     </html>
