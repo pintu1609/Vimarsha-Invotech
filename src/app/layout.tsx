@@ -75,6 +75,9 @@ export const metadata = {
     siteName: "Vimarsha Invotech",
     url: "https://vimarsha-invotech.vercel.app",
   },
+  verification: {
+    google: "google655f554a553e3a93.html",
+  },
 };
 
 
