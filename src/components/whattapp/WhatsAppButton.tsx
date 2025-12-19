@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/917903566217?text=Hello%20Vimarsha%20Invotech,%20I%20am%20interested%20in%20your%20software%20services."
+      href="https://wa.me/917903566217?text=Hello%20Vimarsha%20Invotech,%0AI%20came%20across%20your%20work%20and%20would%20like%20to%20discuss%20my%20project%20requirements.%20Could%20we%20connect%3F"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with Vimarsha Invotech on WhatsApp"
