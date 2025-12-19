@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 
 export const metadata = {
-  title: "AI Software Company in India",
+  title: "Vimarsha Invotech | Software & AI Solutions Company in India",
   description:
     "Vimarsha Invotech is an AI and full-stack software company delivering scalable digital solutions.",
 }
