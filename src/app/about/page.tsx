@@ -1,3 +1,5 @@
+import Founder from "@/components/Founder";
+
 export const metadata = {
   title: "About Us",
   description:
@@ -73,6 +75,7 @@ export default function AboutPage() {
           </div>
         </div>
 
+        <Founder/>
         {/* Strength Section */}
         <div className="bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl sm:rounded-3xl p-4 sm:p-12 text-center border border-white/10">
           <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-slate-100">
