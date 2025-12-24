@@ -1,4 +1,5 @@
 import Founder from "@/components/Founder";
+import { Code2, Rocket, Brain, Layers, Target, ShieldCheck } from 'lucide-react';
 
 export const metadata = {
   title: "About Us",
@@ -25,8 +26,8 @@ export default function AboutPage() {
         {/* Story Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center mb-16 md:mb-20">
           <div>
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-slate-100">
-              Our Origin Story
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-slate-100 flex items-center gap-3">
+            <Layers className="text-blue-500 w-6 h-6" />  Our Origin Story
             </h2>
             <p className="text-slate-300 mb-4 text-sm sm:text-base">
               Vimarsha Invotech was founded with a simple but powerful belief:
@@ -42,6 +43,7 @@ export default function AboutPage() {
 
           {/* Glass Card */}
           <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-xl">
+           
             <h3 className="text-lg sm:text-xl font-semibold mb-2 text-blue-400">
               Vimarsha + Invotech
             </h3>
@@ -55,6 +57,9 @@ export default function AboutPage() {
         {/* Philosophy Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16 md:mb-20">
           <div className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/20">
+             <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <Brain className="text-blue-400 w-6 h-6" />
+            </div>
             <h3 className="text-lg sm:text-xl font-semibold mb-3 text-slate-100 group-hover:text-blue-400 transition">
               Vimarsha — Deep Analysis
             </h3>
@@ -65,6 +70,9 @@ export default function AboutPage() {
           </div>
 
           <div className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/20">
+           <div className="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <Rocket className="text-purple-400 w-6 h-6" />
+            </div>
             <h3 className="text-lg sm:text-xl font-semibold mb-3 text-slate-100 group-hover:text-blue-400 transition">
               Invotech — Scalable Innovation
             </h3>
@@ -78,6 +86,9 @@ export default function AboutPage() {
         <Founder/>
         {/* Strength Section */}
         <div className="bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl sm:rounded-3xl p-4 sm:p-12 text-center border border-white/10">
+         <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-8">
+            <ShieldCheck className="text-blue-500 w-8 h-8" />
+          </div>
           <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-slate-100">
             What Sets Us Apart
           </h2>
