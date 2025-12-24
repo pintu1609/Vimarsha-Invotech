@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -39,7 +40,9 @@ export default function Hero() {
             research and scalable technology. Our mission is to solve complex
             business challenges with data-driven innovation.
           </p>
-
+                <Link
+          href="/contact"
+          >
           <button
             className="
               px-6 py-3
@@ -48,9 +51,11 @@ export default function Hero() {
               hover:bg-blue-700 transition
               text-sm sm:text-base
             "
+           
           >
-            Explore Our Solutions
+             Discuss Your Project
           </button>
+          </Link>
         </div>
 
         {/* Right Illustration */}
