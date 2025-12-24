@@ -1,9 +1,11 @@
+
 export const metadata = {
   title: "Services",
   description:
-    "Full-stack development, cloud architecture, and applied AI services designed for scalable growth.",
+  "Full-stack development, cloud architecture, and applied AI services designed for scalable growth.",
 };
 
+import Link from "next/link";
 export default function ServicesPage() {
   return (
     <section className="pt-24 pb-16 md:py-24 px-4 sm:px-6">
@@ -12,7 +14,7 @@ export default function ServicesPage() {
         {/* Header */}
         <div className="mb-12 md:mb-16 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 text-slate-100">
-            Our <span className="text-blue-400">Services</span>
+            How We Help <span className="text-blue-400">Teams Build Faster</span>
           </h1>
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
             High-impact engineering and AI-driven solutions designed to help
@@ -32,6 +34,9 @@ export default function ServicesPage() {
               High-performance web and mobile applications built using modern
               full-stack frameworks and best practices.
             </p>
+            <p className="text-slate-300 mb-4 text-sm sm:text-base">
+              Ideal for startups and founders building early-stage products.
+            </p>
             <p className="text-slate-400 text-xs sm:text-sm">
               Next.js · MERN · React · API Design
             </p>
@@ -46,6 +51,9 @@ export default function ServicesPage() {
               Secure, scalable cloud systems designed for reliability,
               performance, and long-term growth.
             </p>
+            <p className="text-slate-300 mb-4 text-sm sm:text-base">
+              Ideal for startups and founders building early-stage products.
+            </p>
             <p className="text-slate-400 text-xs sm:text-sm">
               AWS · Google Cloud · Scalability · Security
             </p>
@@ -59,6 +67,9 @@ export default function ServicesPage() {
             <p className="text-slate-300 mb-4 text-sm sm:text-base">
               Custom AI, ML, and NLP solutions built to solve real business
               problems with measurable impact.
+            </p>
+            <p className="text-slate-300 mb-4 text-sm sm:text-base">
+              Ideal for startups and founders building early-stage products.
             </p>
             <p className="text-slate-400 text-xs sm:text-sm">
               NLP · Chatbots · Automation · Predictive Systems
@@ -80,6 +91,17 @@ export default function ServicesPage() {
         </div>
 
       </div>
+      <div className="mt-12 text-center">
+  <p className="text-slate-300 mb-4 text-sm sm:text-2xl">
+    Not sure which service fits your needs?
+  </p>
+  <Link
+    href="/contact"
+    className="inline-block px-6 py-3 rounded-full bg-blue-500 text-white font-medium hover:bg-blue-600 transition "
+  >
+    Discuss Your Project
+  </Link>
+</div>
     </section>
   );
 }
