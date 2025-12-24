@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import HowWeWork from "@/components/HowWeWork";
 
 export const metadata = {
   title: "Vimarsha Invotech | Software & AI Solutions Company in India",
@@ -55,6 +56,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <HowWeWork />
     </>
   );
 }
