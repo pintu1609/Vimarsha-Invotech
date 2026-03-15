@@ -16,7 +16,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-        <Image src="/image/logo2.png" alt="Vimarsha Invotech Logo" width={70} height={70} />
+        <Image src="/image/logo_new-withoutbg.png" alt="Vimarsha Invotech Logo" width={70} height={70} />
         </Link>
 
         {/* Desktop Menu */}
