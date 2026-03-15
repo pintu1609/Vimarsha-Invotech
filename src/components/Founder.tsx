@@ -1,5 +1,7 @@
 // import { Github, Linkedin, ExternalLink } from 'lucide-react';
 
+import Image from "next/image";
+
 export default function Founder() {
     return (
 
@@ -37,9 +39,10 @@ export default function Founder() {
                     <div className="lg:col-span-4 flex justify-center">
                       <div className="relative">
                         <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600 to-transparent rounded-full opacity-20 blur-2xl" />
-                        <div className="w-64 h-64 md:w-80 md:h-80 bg-slate-800 rounded-full overflow-hidden border-4 border-white/10 flex items-center justify-center relative grayscale hover:grayscale-0 transition-all duration-700">
-                          <span className="text-slate-600 font-bold text-6xl uppercase tracking-tighter">PK</span>
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                        <div className="w-64 h-64 md:w-80 md:h-80 bg-slate-800 rounded-full overflow-hidden border-4 border-white/10 flex items-center justify-center relative grayscale-0 hover:grayscale transition-all duration-700">
+                          {/* <span className="text-slate-600 font-bold text-6xl uppercase tracking-tighter">PK</span>
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" /> */}
+                          <Image src="/image/professional image.png" alt="Pintu Kumar" width={200} height={200} className="w-full h-full object-fill" />
                         </div>
                       </div>
                     </div>
